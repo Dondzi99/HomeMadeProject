@@ -1,0 +1,51 @@
+﻿@page
+@model BYT.Pages.OfertyLista.IndexModel
+
+<br />
+<div class="container row p0 m0">
+    <div class="col-10">
+        <h2 class="text-info">Oferty</h2>
+    </div>
+    <div class="col-2">
+        <a class="btn btn-info form-control text-white">Dodaj ofertę</a>
+    </div>
+
+    <div class="col-12 border p-3 mt-3">
+        <form method="post">
+            @*@if (Model.OfertyLista.Count() > 0)
+            {
+                <table class="table table-bordered border">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="OfertyLista.FirstOrDefault().ID"></label>
+                        </th>
+                        <th>
+                            <label asp-for="OfertyLista.FirstOrDefault().Nazwa"></label>
+                        </th>
+                        <th>
+                            <label asp-for="OfertyLista.FirstOrDefault().Email"></label>
+                        </th>
+                    </tr>
+                    @foreach (Model.Oferta Obiekt in Model.OfertyLista)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(x => Obiekt.ID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(x => Obiekt.Nazwa)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(x => Obiekt.Email)
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+            else
+            {
+                <p>Brak ofert.</p>
+            }*@
+        </form>
+    </div>
+</div>
